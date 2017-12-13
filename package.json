@@ -1,0 +1,47 @@
+{
+  "name": "nervatura-lambda",
+  "version": "0.5.0",
+  "description": "Nervatura AWS Lambda Functions",
+  "keywords": [
+    "business management",
+    "open-data",
+    "customer",
+    "employee",
+    "product",
+    "invoice",
+    "order",
+    "offer",
+    "stock control",
+    "payment",
+    "inventory",
+    "rental",
+    "project",
+    "express",
+    "PDF reporting"
+  ],
+  "author": "Csaba Kappel <kappel.csaba@gmail.com> (http://nervatura.com)",
+  "license": "LGPL-3.0",
+  "homepage": "http://nervatura.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nervatura/nervatura-lambda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nervatura/nervatura/issues"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "nervatura": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "any-db-mssql": "^0.1.0",
+    "any-db-mysql": "^2.1.2",
+    "any-db-postgres": "^2.1.4",
+    "any-db-sqlite3": "^2.1.4",
+    "node-mailjet": "^3.2.1",
+    "nodemailer": "^4.2.0"
+  }
+}

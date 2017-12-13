@@ -1,0 +1,16 @@
+{
+  "default": {
+    "engine": "$RDS_ENGINE", 
+      "connect": {
+        "host": "$RDS_HOSTNAME", 
+        "port": "$RDS_PORT", 
+        "dbname": "$RDS_DB_NAME", 
+        "username": "$RDS_USERNAME", 
+        "password": "$RDS_PASSWORD" },
+      "settings":{
+        "db_ssl": false,
+        "ndi_enabled": true, 
+        "encrypt_password": "", 
+        "dbs_host_restriction": "" }
+  }
+}

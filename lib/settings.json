@@ -1,0 +1,22 @@
+{
+  "APP_LANG": "en",
+  "CHECK_ADMIN": true,
+  "ADMIN_KEY": "",
+  "PYTHON2_PATH": "python",  
+
+  "RDS_ENGINE": "mysql",
+  "RDS_HOSTNAME": "",
+  "RDS_PORT": "",
+  "RDS_DB_NAME": "",
+  "RDS_USERNAME": "",
+  "RDS_PASSWORD": "",
+
+  "SMTP_HOST": "",
+  "SMTP_PORT": "",
+  "SMTP_SECURE": true,
+  "SMTP_USER": "",
+  "SMTP_PASSWORD": "",
+
+  "MJ_APIKEY_PUBLIC": "",
+  "MJ_APIKEY_PRIVATE": ""
+}

@@ -1,0 +1,94 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Description: |
+  Nervatura lambda functions
+
+Resources:
+  LambdaFunctions:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: nodejs6.10
+      Timeout: 30
+      Handler: index.handler
+      Environment:
+        Variables:
+          HOST_TYPE: lambda
+      Events:
+        ndi_getVernum:
+          Type: Api
+          Properties:
+            Path: /ndi/getVernum
+            Method: any
+        ndi_jsonrpc:
+          Type: Api
+          Properties:
+            Path: /ndi/jsonrpc
+            Method: post
+        ndi_jsonrpc2:
+          Type: Api
+          Properties:
+            Path: /ndi/jsonrpc2
+            Method: post
+        ndi_getData:
+          Type: Api
+          Properties:
+            Path: /ndi/getData
+            Method: get
+        ndi_deleteData:
+          Type: Api
+          Properties:
+            Path: /ndi/deleteData
+            Method: get
+        ndi_updateData:
+          Type: Api
+          Properties:
+            Path: /ndi/updateData
+            Method: get
+
+        npi_jsonrpc:
+          Type: Api
+          Properties:
+            Path: /npi/jsonrpc
+            Method: post
+        npi_call_jsonrpc:
+          Type: Api
+          Properties:
+            Path: /npi/call/jsonrpc
+            Method: post
+        npi_jsonrpc2:
+          Type: Api
+          Properties:
+            Path: /npi/jsonrpc2
+            Method: post
+        npi_call_jsonrpc2:
+          Type: Api
+          Properties:
+            Path: /npi/call/jsonrpc2
+            Method: post
+        
+        nas_database_create:
+          Type: Api
+          Properties:
+            Path: /nas/database/create
+            Method: any
+        nas_database_demo:
+          Type: Api
+          Properties:
+            Path: /nas/database/demo
+            Method: any
+        nas_report_list:
+          Type: Api
+          Properties:
+            Path: /nas/report/list
+            Method: any
+        nas_report_install:
+          Type: Api
+          Properties:
+            Path: /nas/report/install
+            Method: any
+        nas_report_install:
+          Type: Api
+          Properties:
+            Path: /nas/report/delete
+            Method: any
